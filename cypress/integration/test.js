@@ -1,8 +1,7 @@
 describe('MS login', function() {
   it('Logs in', function() {
-    cy.visit('https://bing.com')
-    cy.get('#id_a').click();
-    cy.get('#i0116').click({ force: true });
+    cy.visit('https://login.live.com');
+    /*cy.get('#i0116').click({ force: true });
     cy.get('#i0116').type(Cypress.env('ms_user'),{ force: true });
     cy.get('#idSIButton9').click({ force: true });
     cy.get('#i0118').click({ force: true });
@@ -14,6 +13,6 @@ describe('MS login', function() {
     cy.get('#sb_form').submit({ force: true });
     cy.url().should('contains', 'https://www.bing.com/search');
     cy.url().should('contains', 'https://login.microsoftonline.com/common/oauth2/authorize');
-    cy.url().should('contains', 'https://www.bing.com/orgid/idtoken/conditional');
+    cy.url().should('contains', 'https://www.bing.com/orgid/idtoken/conditional');*/
   })
 })
