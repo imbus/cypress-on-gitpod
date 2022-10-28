@@ -1,18 +1,19 @@
-describe('MS login', function() {
-  it('Logs in', function() {
-    cy.visit('https://login.live.com');
-    /*cy.get('#i0116').click({ force: true });
-    cy.get('#i0116').type(Cypress.env('ms_user'),{ force: true });
-    cy.get('#idSIButton9').click({ force: true });
-    cy.get('#i0118').click({ force: true });
-    cy.get('#i0118').type(Cypress.env('ms_pass'),{ force: true });
-    cy.get('#idSIButton9').click({ force: true });
-    cy.get('#sb_form_q').click({ force: true });
-    cy.get('#sb_form_q').type('test',{ force: true });
-    cy.get('#sb_form_go').click({ force: true });
-    cy.get('#sb_form').submit({ force: true });
-    cy.url().should('contains', 'https://www.bing.com/search');
-    cy.url().should('contains', 'https://login.microsoftonline.com/common/oauth2/authorize');
-    cy.url().should('contains', 'https://www.bing.com/orgid/idtoken/conditional');*/
+/// <reference types="Cypress" />
+
+describe('My First Test', () => {
+    it('Gets, types and asserts', () => {
+      cy.visit('https://example.cypress.io')
+  
+      cy.contains('type').click()
+  
+      // Should be on a new URL which
+      // includes '/commands/actions'
+      cy.url().should('include', '/commands/actions')
+  
+      // Get an input, type into it and verify
+      // that the value has been updated
+      cy.get('.action-email')
+        .type('fake@email.com')
+        .should('have.value', 'fake@email.com')
+    })
   })
-})
