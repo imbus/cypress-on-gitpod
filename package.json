@@ -8,6 +8,6 @@
     "test": "run-p --race dev cy:run"
   },
   "devDependencies": {
-    "cypress": "^6.2.0"
+    "cypress": "^10.11.0"
   }
 }
