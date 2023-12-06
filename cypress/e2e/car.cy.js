@@ -2,11 +2,9 @@
 
 describe('Login to CarConfig', () => {
   it('logs in with correct credentials', () => {
-    cy.visit('http://car.keyword-driven.de')
-    cy.get('#input_username').type('schulung20')
-    cy.get('#input_password').type('@RBTFRMWRK@')
-    cy.get('#button_login').click()
-    cy.url().should('contain', 'http://car.keyword-driven.de/list' )
+    cy.openCarConfig()
+    cy.login('schulung02', '@RBTFRMWRK@')
+    cy.verifyValidLogin()
     cy.get('a[href="/config/basemodel"]').click()
     cy.get('select').select('I5')
     cy.get('.fa-chevron-right').click()

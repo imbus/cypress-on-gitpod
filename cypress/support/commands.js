@@ -10,8 +10,15 @@
 //
 //
 // -- This is a parent command --
-// Cypress.Commands.add("login", (email, password) => { ... })
-//
+Cypress.Commands.add("login", (user, password) => {
+    cy.get('#input_username').type(user)
+    cy.get('#input_password').type(password)
+    cy.get('#button_login').click()
+ })
+
+Cypress.Commands.add("openCarConfig", () => cy.visit('http://car.keyword-driven.de'))
+Cypress.Commands.add("verifyValidLogin", () => cy.url().should('contain', 'http://car.keyword-driven.de/list' ))
+
 //
 // -- This is a child command --
 // Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })
