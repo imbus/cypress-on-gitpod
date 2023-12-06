@@ -8,7 +8,7 @@ tasks:
       rm /tmp/.npm-lock
     command: npx cypress install
   - init: sleep 1 && while [ -f /tmp/.npm-lock ]; do sleep 1; done
-    command: npm run cy:open
+    command: npx cypress open
 ports:
   - port: 5900
     onOpen: ignore
