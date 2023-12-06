@@ -1,7 +1,11 @@
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/mikenikles/cypress-on-gitpod)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/imbus/cypress-on-gitpod)
 
 # cypress-on-gitpod
 A template repository to run [Cypress.io](https://www.cypress.io/) on [Gitpod.io](https://www.gitpod.io/).
+
+# RUN
+
+[--> Run on Gitpod <--](https://gitpod.io/#https://github.com/imbus/cypress-on-gitpod)
 
 ## Getting Started
 
